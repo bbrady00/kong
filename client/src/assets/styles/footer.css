@@ -1,0 +1,172 @@
+.footer {
+  background-color: #000;
+  color: white;
+  width: 100%;
+  margin: 0;
+  border-top: 5px solid #e1c437;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.footer-logo,
+.footer-map-container,
+.footer-contact-hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo-img {
+  max-height: 350px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer-map-container {
+  gap: 20px;
+  color: #e1c437;
+  justify-content: centre;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: -20px;
+  z-index: 1;
+}
+
+.footer-map-screenshot {
+  max-height: 200px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.footer-address {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer-hours-heading {
+  font-size: 1.2rem;
+  color: #e1c437;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.footer-hours p {
+  color: #e1c437;
+  margin: 25px 0;
+}
+
+.footer-hours-description {
+  font-size: 0.9rem;
+  color: #e1c437;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+  color: #e1c437;
+  text-decoration: underline;
+}
+
+.footer-review-prompt {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.footer-review-prompt p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-review-link {
+  color: #e1c437;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.footer-review-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: #e1c437;
+  font-size: 0.9rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .footer-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .footer-logo-img {
+    max-width: 250px;
+  }
+
+  .footer-review-prompt {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .footer-review-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+}

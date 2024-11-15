@@ -1,0 +1,14 @@
+.booking-container {
+  width: 100vw;
+  text-align: center;
+  border-top: 5px solid #e1c437;
+}
+
+.booking h2:after {
+  content: none;
+}
+
+.booking p {
+  color: rgb(244, 240, 226);
+  padding-bottom: 1%;
+}

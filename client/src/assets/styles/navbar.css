@@ -1,0 +1,172 @@
+/* Navbar container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+  height: 130px;
+  width: 100%;
+  position: relative;
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+
+/* Logo styling */
+.nav-logo img {
+  max-height: 180px;
+  width: auto;
+  position: relative;
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Individual link styling */
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 5px 10px;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+  color: #f8da3c;
+}
+
+.navbar-links li a.book-now:hover {
+  background-color: white;
+  color: #f8da3c;
+}
+
+.icons,
+.hamburger {
+  display: none;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 70px;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .nav-logo img {
+    max-height: 90px;
+    left: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 30px;
+    color: #f8da3c;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1001;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: rgb(244, 240, 226);
+    padding: 0;
+    z-index: 9999;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-links li a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0;
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .icons svg {
+    width: 20px;
+    height: 20px;
+    fill: black;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .icons svg:hover {
+    transform: scale(1.1);
+  }
+
+  .menu-active .navbar-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    height: 100vh;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  .menu-active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .menu-active nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .menu-active .nav-logo img {
+    position: absolute;
+    top: -12px;
+  }
+
+  body {
+    overflow: hidden;
+  }
+}

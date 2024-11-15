@@ -1,0 +1,26 @@
+.error-section {
+  padding: 100px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.error-section p {
+  margin-top: 20px;
+}
+
+.error-section a {
+  margin-top: 30px;
+  color: #f8da3c;
+  text-decoration: none;
+}
+
+.error-section a:hover {
+  color: #e1c437;
+}
+
+@media (max-width: 480px) {
+  .error-section {
+    padding: 50px;
+  }
+}
